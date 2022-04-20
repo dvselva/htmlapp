@@ -81,7 +81,8 @@ img {
 .container .image:hover .overlay .h4,
 .container .image:hover .overlay .textmuted
  {
-    color: black
+    color: red;
+    
 }
 
 .image:hover .overlay::before {
