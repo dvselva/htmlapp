@@ -1,12 +1,12 @@
 // (function () {
 $(document).ready(function () {
 
-    save();
+    // save();
 
-    $("#my-form").submit(function (e) {
-        e.preventDefault(); // <==stop page refresh==>
-        console.log("submitted");
-    });
+    // $("#my-form").submit(function (e) {
+    //     e.preventDefault(); // <==stop page refresh==>
+    //     console.log("submitted");
+    // });
 
     $("#navigation").load("./navigation.html");
 
@@ -15,8 +15,6 @@ $(document).ready(function () {
         space: '9gf6mhyw2bkx'
     })
     var PRODUCT_CONTENT_TYPE_ID = 'yesgeProducts'
-
-
 
     contentfulClient.getEntries({
         content_type: PRODUCT_CONTENT_TYPE_ID
@@ -53,11 +51,11 @@ $(document).ready(function () {
 
             })
 
-        })
+        });
 
+ 
 
 });
-
 
 
 function save() {
