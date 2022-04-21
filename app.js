@@ -8,7 +8,7 @@ $(document).ready(function () {
         console.log("submitted");
     });
 
-
+    $("#navigation").load("./navigation.html");
 
     var contentfulClient = contentful.createClient({
         accessToken: '6o_DMSyLI7OSMmd434UXyAb2ILGS2R9F7c5h_lmsYWI',
@@ -48,7 +48,7 @@ $(document).ready(function () {
 
 
 
-                $("#contentful").append(cardHtml);
+                $("#main-contentful").append(cardHtml);
 
 
             })
